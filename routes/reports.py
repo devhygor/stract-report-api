@@ -23,8 +23,3 @@ def general_report():
 @reports_bp.route("/geral/resumo")
 def general_summary():
     return reports_controller.general_summary()
-
-
-if __name__ == "__main__":
-    plataform_report = reports_controller.platform_report("ga4")
-    print(plataform_report)

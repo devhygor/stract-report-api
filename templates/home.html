@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title">Informações do Desenvolvedor</h5>
+            <p class="card-text"><strong>Nome:</strong> {{ user_info.name }}</p>
+            <p class="card-text"><strong>Email:</strong> <a href="mailto:{{ user_info.email }}">{{ user_info.email }}</a></p>
+            <p class="card-text">
+                <strong>LinkedIn:</strong>
+                <a href="{{ user_info.linkedin }}" target="_blank">{{ user_info.linkedin }}</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}

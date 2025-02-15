@@ -1,7 +1,7 @@
 from flask import Flask
 from routes.reports import reports_bp
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 app.register_blueprint(reports_bp)
 
