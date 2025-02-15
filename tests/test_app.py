@@ -3,7 +3,6 @@ from app import app
 
 @pytest.fixture
 def client():
-    """Fixture para configurar o client de testes do Flask"""
     with app.test_client() as client:
         yield client
 
@@ -22,19 +21,19 @@ def test_plataforma_resumo(client):
     """Testa o endpoint de resumo de uma plataforma"""
     response = client.get('/meta_ads/resumo')
     assert response.status_code == 200
-    assert b"Resumo de meta_ads" in response.data  # Ajuste conforme o conteúdo esperado
+    assert b"Resumo de meta_ads" in response.data
 
 def test_geral(client):
     """Testa o endpoint geral"""
     response = client.get('/geral')
     assert response.status_code == 200
-    assert b"Geral" in response.data  # Ajuste conforme o conteúdo esperado
+    assert b"Geral" in response.data
 
 def test_geral_resumo(client):
     """Testa o endpoint de resumo geral"""
     response = client.get('/geral/resumo')
     assert response.status_code == 200
-    assert b"Resumo Geral" in response.data  # Ajuste conforme o conteúdo esperado
+    assert b"Resumo Geral" in response.data
 
 if __name__ == "__main__":
     pytest.main()
