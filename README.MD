@@ -82,3 +82,4 @@ python3 app.py
 - As seguintes dependências serão instaladas automaticamente ao rodar `pip install -r requirements.txt`:
   - Flask
   - Requests
+  - Pytest (Para rodar os tests unitarios)
