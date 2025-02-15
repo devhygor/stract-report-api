@@ -83,3 +83,7 @@ python3 app.py
   - Flask
   - Requests
   - Pytest (Para rodar os tests unitarios)
+
+## Video apresentaçao
+Fiz um vídeo apresentando o projeto e subi no YouTube como não listado. O áudio ficou um pouco baixo porque esqueci de ajustar o microfone, mas dá pra entender tudo direitinho. Aqui está o link:
+[Vídeo apresentação projeto](https://youtu.be/biKCuuBWdD8)
